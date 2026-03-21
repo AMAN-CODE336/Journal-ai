@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+
+@theme inline {
+  --color-bg: #0f0e0d;
+  --color-surface: #1a1917;
+  --color-surface2: #222120;
+  --color-border: #2a2825;
+  --color-accent: #e8b86d;
+  --color-text: #f5f0e8;
+  --color-muted: #8a8070;
+  --color-danger: #e06c6c;
+}
+
+:root {
+  --background: 20 15 13;
+  --foreground: 245 240 232;
+  --card: 26 25 23;
+  --card-foreground: 245 240 232;
+  --primary: 232 184 109;
+  --primary-foreground: 15 14 13;
+  --secondary: 34 33 32;
+  --secondary-foreground: 245 240 232;
+  --muted: 34 33 32;
+  --muted-foreground: 138 128 112;
+  --destructive: 224 108 108;
+  --border: 42 40 37;
+  --input: 34 33 32;
+  --ring: 232 184 109;
+  --radius: 0.75rem;
+}
+
+body {
+  background: #0f0e0d;
+  color: #f5f0e8;
+  font-family: 'DM Sans', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'DM Serif Display', serif;
+}
+
+.tiptap:focus { outline: none; }
+.tiptap p { margin: 0.5rem 0; }
+.tiptap h1 { font-size: 1.8rem; font-weight: bold; margin: 1rem 0; color: #f5f0e8; }
+.tiptap h2 { font-size: 1.4rem; font-weight: bold; margin: 0.8rem 0; color: #f5f0e8; }
+.tiptap h3 { font-size: 1.2rem; font-weight: bold; margin: 0.6rem 0; color: #f5f0e8; }
+.tiptap ul { list-style-type: disc; padding-left: 1.5rem; }
+.tiptap ol { list-style-type: decimal; padding-left: 1.5rem; }
+.tiptap blockquote { border-left: 3px solid #e8b86d; padding-left: 1rem; color: #8a8070; margin: 1rem 0; }
+.tiptap code { background: #222120; padding: 0.2rem 0.4rem; border-radius: 4px; font-size: 0.85rem; }
+.tiptap pre { background: #222120; padding: 1rem; border-radius: 8px; overflow-x: auto; margin: 1rem 0; }
+.tiptap p.is-editor-empty:first-child::before { content: attr(data-placeholder); color: #8a8070; pointer-events: none; float: left; height: 0; }
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #2a2825; border-radius: 4px; }
+
+
+
+/* react-day-picker dark theme */
+.rdp-root {
+  --rdp-accent-color: #e8b86d !important;
+  --rdp-accent-background-color: #e8b86d33 !important;
+  color: #f5f0e8 !important;
+}
+
+.rdp-selected .rdp-day_button {
+  background-color: #e8b86d !important;
+  color: #0f0e0d !important;
+  border-color: #e8b86d !important;
+}
+
+.rdp-today:not(.rdp-selected) .rdp-day_button {
+  color: #e8b86d !important;
+  border-color: #e8b86d !important;
+  background: transparent !important;
+}
+
+.rdp-day_button:hover {
+  background-color: #222120 !important;
+  color: #f5f0e8 !important;
+}
+
+.rdp-chevron {
+  fill: #e8b86d !important;
+}
+
+.rdp-head_cell {
+  color: #8a8070 !important;
+}
+
+.rdp-caption_label {
+  color: #f5f0e8 !important;
+}
+
+.rdp-day_button:disabled {
+  opacity: 0.3 !important;
+}
