@@ -6,7 +6,7 @@ const steps = [
   {
     number: "01",
     label: "WRITE",
-    title: "Write freely.",
+    title: "Write freely and openly..",
     body: "Open the editor. Write what you learned, felt, or wondered. No format. No pressure. Auto-save keeps every word.",
     chips: ["Rich text", "Auto-save", "Streaks"],
     flip: false,
@@ -197,7 +197,7 @@ function DiagonalStep({ step, index }: { step: typeof steps[0]; index: number })
 
         {/* BODY + CHIPS */}
         <motion.div
-          style={{ flex: 1, maxWidth: 400 }}
+          style={{ flex: 1, maxWidth: 600 }}
           initial={{ opacity: 0, y: 24 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.75, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}

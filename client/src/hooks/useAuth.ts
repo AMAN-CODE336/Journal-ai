@@ -16,7 +16,7 @@ const useAuth = () => {
     retry: false
   })
 
-  return { user, isLoading }
+  return { user, isLoading }  
 }
 
 export default useAuth
